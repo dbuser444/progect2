@@ -34,8 +34,6 @@ class Clubs(Base):
 Base.metadata.create_all(bind=engine)
 
 club = db.query(Clubs).all()
-'''for p in club:
-    print(f"{p.id}. {p.name}")'''
 
 app = FastAPI()
 
