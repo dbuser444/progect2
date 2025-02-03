@@ -36,6 +36,7 @@ Base.metadata.create_all(bind=engine)
 club = db.query(Clubs).all()
 
 app = FastAPI()
+print(222)
 
 @app.get("/")
 def root():
